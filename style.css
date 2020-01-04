@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: kadlu for Cocoon
+Template:   cocoon-master
+Version:    1.0.0
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+
+#sub-window {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  max-width: 100vw;
+  width: 640px;
+  z-index: 1;
+  border: solid;
+  border-width: thin;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.modal-card-head {
+  border-bottom: 1px solid #dbdbdb;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+}
+
+.modal-card-title {
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.modal-card-body {
+  -webkit-overflow-scrolling: touch;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  padding: 20px;
+  height: calc(100% - 48px);
+}
+
+#sub-window.modal-card {
+  margin: 0;
+  max-height: 100vh
+}
+
+#sub-window>.modal-card-head {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: move;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+#sub-window>.modal-card-head>.modal-card-title {
+  font-size: 1rem;
+  margin: 0 0;
+}
+
+.kadlu-modal-button,
+.kadlu-modal-icon,
+.kadlu-modal-link {
+  color: hsla(0, 0%, 4%, .2);
+  font-size: 1.3rem;
+  padding: 0;
+  margin-right: 5px;
+  border: 0;
+  background-color: hsla(0, 0%, 4%, 0);
+  cursor: pointer;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.sub-window-open {
+  font-family: Aharoni, "Arial Black", Impact, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  left: -3px;
+  border-radius: 6px 6px 0 0;
+  padding: 0 1em 0 .8em;
+  margin: 1em 2%;
+  position: relative;
+  margin-top: 2em;
+  border-top-left-radius: 0;
+
+  border-width: 3px;
+  padding: 1.2em 1em;
+  margin: 1em 2%;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.sub-window-open-label {
+  font-family: Aharoni, "Arial Black", Impact, Arial, sans-serif;
+  position: absolute;
+  font-size: 13px;
+  top: -1.8em;
+  line-height: 1.8;
+  left: -3px;
+  border-radius: 6px 6px 0 0;
+  padding: 0 1em 0 .8em;
+}
+
+.sub-window-open .sub-window-open-label::after {
+  content: "サブウィンドウで開く";
+}
+
+.copy.toc{
+  border: none;
+}
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1240px以下*/
+@media screen and (max-width: 1240px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*1023px以下*/
+@media screen and (max-width: 1023px) {
+  /*必要ならばここにコードを書く*/
+  #sub-window {
+    width: 100%;
+  }
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px) {
+  /*必要ならばここにコードを書く*/
+}
